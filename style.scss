@@ -194,7 +194,11 @@ section{
                 border-top: 0;
                 border-radius: 0;
                 border-width: 1px;
+                box-shadow: none;
                 font-size: 1.5rem 0;
+            }
+            .form-control:focus{
+                border-color: $primary-color;
             }
             label{
                 top:-15px;
