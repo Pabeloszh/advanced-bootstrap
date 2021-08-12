@@ -116,20 +116,32 @@
             <div class="row justify-content-center">
                 <form action="" class="col-lg-8 col-xl-7">
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="email" type="email" placeholder="name">
-                        <label for="email">Full name</label>
+                        <input class="form-control" id="name" type="text" placeholder="name">
+                        <label for="name">Full name</label>
+                        <div id="validationName" class="invalid-feedback">
+                            A name is required.
+                        </div>
                     </div>
                     <div class="form-floating mb-3">
                         <input class="form-control" id="email" type="email" placeholder="name@example.com">
                         <label for="email">Email address</label>
+                        <div id="validationEmail" class="invalid-feedback">
+                            Email is not valid.
+                        </div>
                     </div>
                     <div class="form-floating mb-3">
                         <input class="form-control" id="tel" type="tel" placeholder="123 456 789">
                         <label for="tel">Phone number</label>
+                        <div id="validationPhone" class="invalid-feedback">
+                            Phone number is required.
+                        </div>
                     </div>
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 10rem"></textarea>
-                        <label for="floatingTextarea2">Message</label>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="message" style="height: 10rem"></textarea>
+                        <label for="message">Message</label>
+                        <div id="validationMessage" class="invalid-feedback">
+                            Message is required.
+                        </div>
                       </div>
                     <input type="submit" value="Send" class="submit btn btn-primary disabled">
                 </form>
